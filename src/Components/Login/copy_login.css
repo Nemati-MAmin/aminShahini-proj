@@ -1,0 +1,120 @@
+.login-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.login-form-group {
+    display: flex;
+    margin: 10px;
+    background: #FFFFFF;
+}
+
+/* .login-form-group input {
+    border: 2px solid #156195;
+    width: 300px;
+    height: 50px;
+    border-radius: 100px;
+} */
+
+.login-form-group input::-moz-placeholder {
+    font-size: 20px;
+    color: rgba(120, 174, 211, 0.64);
+}
+
+.login-link-container {
+    position: relative;;
+    display: flex;
+    flex-direction: column;
+    left: 200px;
+}
+
+.login-link-container > *, .login-link-wrapper > *{
+    margin: 9px;
+    text-decoration: none;
+}
+
+.login-link-container > .login-link-wrapper > *{
+    position: relative;
+}
+
+.login-link-container > .login-link-wrapper > li{
+    list-style: none;
+}
+
+.login-link-container .login-link-wrapper{
+    display: flex;
+}
+
+/* .login-link-container > *:first-child{
+    font-family: B Traffic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 22px;
+    color: #156195; 
+} */
+
+/* .login-form-icon {
+    margin: 10px;
+    color: #78AED3;
+    font-size: 25px;
+    list-style-type: none;
+} */
+
+
+.login-button-container {
+    position: relative;
+    display: flex;
+    left: 120px;
+    margin-bottom: 10px;
+    border: 2px solid #156195;
+    width: 160px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.login-button-container .login-button{
+    width: 75px;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    background-color: white;
+    margin: 3px;
+    height: 30px;
+
+}
+
+.entry-button {
+    position: relative;
+    top: 65px;
+    left: 240px; 
+}
+
+.login-container .login-button-entry::before {
+    content: 'ورود';
+    font-family: B Traffic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 6px;
+    color: #FFFFFF;
+    position: absolute;
+    width: 85px;
+    height: 40px;
+    border-radius: 100px;
+
+    background-color: #156195;
+    left: -1px;
+    bottom: -1px;
+}
+
+.login-button-register {
+    font-family: B Traffic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+}

@@ -1,0 +1,159 @@
+.website-icons-container {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-image: url('/home/amin/Projs/vsProjs/clone-shahini/src/Rectangle 3.svg');
+    /* background-color: var(--background-color); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 102px;
+    border: white solid 2px;
+    /* background-color: red; */
+}
+
+.website-icons-container-sign_up {
+    transform: rotateY(180deg);
+}
+
+.website-icons-container .div-wrapper {
+    transform: rotateY(180deg);
+}
+.website-icons-container-sign_up .div-wrapper {
+    transform: rotateY(0deg);
+}
+
+/* .website-icons-container:hover, .website-icons-wrapper:hover{
+    transform: rotateY(-180deg)
+} */
+
+.website-icons-container::-webkit-scrollbar{
+    display: none;
+}
+
+.website-icons-wrapper{
+    display: flex;
+    position: relative;
+    right: 140px;
+    z-index: 2;
+    transform: rotateY(-180deg);
+    right: 0px;
+    /* margin: auto; */
+}
+
+.website-icons-div{
+    position: relative;
+    margin: 140px 2px;
+    width: 80px;
+    height: 300px; 
+    width: 5rem;
+    height: 19rem;
+    background: white;
+    border: 2px solid var(--background-color);
+    box-sizing: border-box;
+}
+
+.website-icons-div .website-icons-text{
+    list-style: none;
+    font-family: B Traffic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 7.5rem;
+    line-height: 7.5rem;
+    color: #78AED3;
+    z-index: 10;
+}
+
+.website-icons-text-1{
+    position: absolute;
+    left: 21.9rem;
+    bottom: 15rem;
+}
+
+.website-icons-text-2{
+    position: absolute;
+    left: 10.625rem;
+    bottom: 8.75rem;
+}
+
+.website-icons-text-3{
+    position: absolute;
+    right: -2.5rem;
+    bottom: 8.125rem;
+}
+
+.website-icons-text-4{
+    position: absolute;
+    right: 10rem;
+    bottom: 6.25rem;
+}
+
+.website-icons-text-5{
+    position: absolute;
+    right: 16.875rem;
+    bottom: 11.875rem;
+}
+
+.website-icons-text-6{
+    position: absolute;
+    right: 18.75rem;
+    bottom: 14.28rem;
+}
+
+.div-wrapper {
+    padding: 50px;
+    /* width: 100%;
+    overflow: hidden; */
+    display: flex;
+    margin: auto;
+}
+
+.div-wrapper > *:nth-child(odd){
+    flex-grow: 1;
+    align-self: flex-end;
+    margin-bottom: 12vh;
+}
+
+.div-wrapper:nth-child(even){
+    align-self: flex-start;
+    margin-top: 12vh;
+
+}
+
+.website-icons-Rectangle{
+    position: absolute;
+    top: -173px;
+    height: 157%;
+    width: 160%;
+    right: 90px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1060px ) {
+    .website-icons-container {
+        transform: rotateZ(270deg) rotateY(180deg) rotateZ(180deg);
+        border-radius: 0%;
+        /* height: 100%; */
+        width: 60vh;
+        /* height: 100%; */
+    }
+    .div-wrapper {
+        transform: rotateZ(270deg);
+        position: relative;
+        right: 50px;
+    }
+
+    .website-icons-container-sign_up .div-wrapper {
+        transform: rotateZ(270deg);
+    }
+
+    .website-icons-container-login .div-wrapper {
+        transform: rotateZ(90deg) rotateY(0deg) rotateZ(180deg);
+    }
+
+}
+
+@media screen and (max-width: 500) {
+    
+}

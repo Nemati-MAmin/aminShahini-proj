@@ -1,0 +1,179 @@
+.sign_up-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    right: -10px; 
+}
+
+.sign_up-container > *:last-child {
+    position: relative;
+    right: 100px;
+}
+
+.sign_up-button-container {
+    position: relative;
+    margin-left: 30px;
+    margin-top: 40px;
+    bottom: 30px;
+}
+
+.sign_up-form-group .icon-wrapper {
+    right: 460px;
+    position: absolute;
+    top: 10px;
+}
+
+.sign_up-form-group .icon-circle {
+    font-size: 20px;
+}
+
+.sign_up-form-group .icon-exclamation {
+    position: absolute;
+    top: 3px;
+    left: 1px;
+}
+
+.sign_up-form-group {
+    position: relative;
+    display: flex;
+    margin: 10px;
+    background: #FFFFFF;
+}
+
+.sign_up-form-group:last-child > .pass_group {
+    display: flex;
+    justify-content: start;
+}
+
+.sign_up-form-container > *:last-child > *:last-child {
+    position: relative;
+    right: 107px;
+}
+
+.sign_up-form-group input::-moz-placeholder {
+    font-size: 20px;
+    color: var(--place_holder-color);
+}
+
+.sign_up-link-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 140px;
+}
+
+.sign_up-link-container > *, .sign_up-link-wrapper > *{
+    margin: 9px;
+    text-decoration: none;
+}
+
+.sign_up-link-container > .sign_up-link-wrapper > *{
+    /* position: relative; */
+    left: 50px;
+}
+
+.sign_up-link-container > .sign_up-link-wrapper > li{
+    list-style: none;
+    color: var(--alert-color);
+}
+
+.sign_up-link-container .sign_up-link-wrapper{
+    display: flex;
+    position: relative;
+    left: 50px;
+}
+
+.sign_up-link-container .icon-exclamation {
+    position: absolute;
+    top: 3px;
+    left: 70px;
+}
+
+.sign_up-link-container .icon-circle {
+    font-size: 20px;
+    position: absolute;
+    left: 68px;
+}
+
+
+.icon-wrapper {
+    color: var(--alert-color);
+    list-style: none;
+    position: absolute;
+
+}
+
+.icon-wrapper > * {
+    text-decoration: none;
+}
+
+.sign_up-button-container {
+    position: relative;
+    display: flex;
+    left: 120px;
+    margin-bottom: 10px;
+    border: 2px solid #156195;
+    width: 160px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.sign_up-button-container .sign_up-button{
+    width: 75px;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    background-color: white;
+    margin: 3px;
+    height: 30px;
+
+}
+
+.entry-button {
+    position: relative;
+    top: 65px;
+    left: 240px; 
+}
+
+.sign_up-button-entry {
+    font-family: B Traffic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.sign_up-container .sign_up-button-register::before {
+    content: 'ثبت نام';
+    font-family: B Traffic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 6px;
+    position: absolute;
+    width: 85px;
+    height: 38px;
+    border-radius: 100px;
+    color: #FFFFFF;
+    padding-top: 8px;
+    background-color: var(--button-color);
+    right: -3.5px;
+    bottom: -4.5px;    
+}
+
+.sign_up-button-register {
+    position: relative;
+    font-family: B Traffic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.pass_group > * {
+    width: 37%;
+}
+
+
+

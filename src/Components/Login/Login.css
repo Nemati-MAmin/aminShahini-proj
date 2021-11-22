@@ -1,0 +1,169 @@
+.login-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3.75rem;
+}
+
+.login-container > *:last-child {
+    position: absolute;
+    top: 24.375rem;
+    left: 18.75rem;
+}
+
+.login-form-group .icon-wrapper {
+    position: relative;
+    left: 1rem;
+}
+
+.login-form-group .icon-wrapper .icon-circle{
+    position: absolute;
+    font-size: 1.4rem;
+    right: 0px;
+    bottom: 1.7rem;
+}
+
+.login-form-group {
+    display: flex;
+    margin: .625rem;
+    background: #FFFFFF;
+}
+
+/* .login-form-group input {
+    border: 2px solid #156195;
+    width: 300px;
+    height: 50px;
+    border-radius: 100px;
+} */
+
+.login-form-group input::-moz-placeholder {
+    font-size: 1.25rem;
+    color: rgba(120, 174, 211, 0.64);
+}
+
+.login-link-container {
+    position: relative;;
+    display: flex;
+    flex-direction: column;
+    left: 12.5rem;
+}
+
+.login-link-container > *, .login-link-wrapper > *{
+    margin: .563rem;
+    text-decoration: none;
+}
+
+.login-link-container > .login-link-wrapper > *{
+    position: relative;
+}
+
+.login-link-container > .login-link-wrapper > li{
+    list-style: none;
+}
+
+.login-link-container .login-link-wrapper{
+    display: flex;
+}
+
+.login-link-wrapper .icon-wrapper {
+    position: relative;
+}
+
+.login-link-wrapper .icon-circle {
+    position: absolute;
+    font-size: 1.4rem;
+    bottom: 0px;
+    right: 0px;
+}
+
+.login-link-wrapper {
+    position: relative;
+    right: 20px;
+}
+
+/* .login-link-container > *:first-child{
+    font-family: B Traffic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 22px;
+    color: #156195; 
+} */
+
+/* .login-form-icon {
+    margin: 10px;
+    color: #78AED3;
+    font-size: 25px;
+    list-style-type: none;
+} */
+
+
+.login-button-container {
+    position: relative;
+    display: flex;
+    left: 7.5rem;
+    margin-bottom: .625rem;
+    border: .125 solid #156195;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 6.25rem;
+}
+
+.login-button-container .login-button{
+    width: 4.688rem;
+    border: none;
+    outline: none;
+    border-radius: 6.25rem;
+    background-color: white;
+    margin: .188rem;
+    height: 1.875rem;
+
+}
+
+/* .entry-button {
+    position: absolute;
+    background-color: black;
+    align-self: center;
+    top: 10px;
+    left: 100px; 
+} */
+
+.login-container .login-button-entry::before {
+    content: 'ورود';
+    font-family: B Traffic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    padding-top: .375rem;
+    color: #FFFFFF;
+    position: absolute;
+    width: 5.313rem;
+    height: 2.5rem;
+    border-radius: 6.25rem;
+
+    background-color: #156195;
+    left: -.063rem;
+    bottom: -.063rem;
+}
+
+.login-button-register {
+    font-family: B Traffic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+}
+
+@media screen and (max-width: 1060px ) {
+    .login-container{
+        right: 30px;
+    }
+
+    .login-container > *:last-child {
+        position: relative;
+        top: -1rem;
+        /* right: 20rem; */
+        left: -10rem;
+    }
+  }

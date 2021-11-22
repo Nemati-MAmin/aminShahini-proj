@@ -1,0 +1,75 @@
+:root {
+    --background-color: #78AED3;
+    --button-color: #156195;
+    --alert-color: #FF0000;
+    --border-color: #156195;
+    --text-color: #156195;
+    --place_holder-color: rgba(120, 174, 211, 0.64);
+}
+
+* {
+    /* outline: 2px solid red; */
+}
+
+.form-group-input {
+    border: 0.125rem solid var(--border-color);
+    width: 18.75rem;
+    height: 2.813rem;
+    border-radius: 6.25rem;
+}
+
+.button {
+    width: 9.688rem;
+    border: 0.125rem solid var(--border-color);
+    border-radius: 6.25rem;
+    background: #156195; 
+    font-family: B Traffic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    color: #FFFFFF;
+    margin: 0.188rem;
+    height: 2.5rem; 
+}
+
+.alert-link {
+    font-family: B Traffic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    color: var(--alert-color);
+}
+
+.question-link {
+    font-family: B Traffic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.375rem;
+    line-height: 1.375rem;
+    color: #156195; 
+}
+
+.form-icon {
+    margin: 0.625rem;
+    color: var(--background-color);
+    font-size: 1.563rem;
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1060px ) {
+    :root {
+        font-size: 12px;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    :root {
+        font-size: 10px;
+        width: 100vw;
+        height: 100vh;
+    }
+}
