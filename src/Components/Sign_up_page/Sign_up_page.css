@@ -1,0 +1,30 @@
+.authentication-container {
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 102px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1060px ) {
+    .authentication-container {
+        overflow: scroll;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 0px;
+        width: 100vw;
+        height: 100vh;
+        bottom: 50px;
+    }
+    
+    .authentication-container-login {
+        position: relative;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        bottom: 50px;
+    }
+}

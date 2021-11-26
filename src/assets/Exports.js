@@ -1,1 +1,1 @@
-export { default as Rectangle } from './SVGs/Rectangle'
+export { default as Rectangle } from './SVGs/Rectangle';

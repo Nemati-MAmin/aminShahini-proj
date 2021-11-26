@@ -1,0 +1,18 @@
+.app-container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    /* overflow: hidden; */
+  }
+  
+  @media screen and (max-width: 1060px ) {
+    .app-container {
+      background-color: white;
+      align-items: flex-start;
+      /* display: ; */
+    }
+  }
