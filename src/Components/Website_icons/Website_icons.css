@@ -4,7 +4,7 @@
     position: relative;
     width: 50%;
     height: 100%;
-    background-image: url('/home/amin/Projs/vsProjs/clone-shahini/src/Rectangle 3.svg');
+    background-image: url('./Rectangle\ 3.svg');
     /* background-color: var(--background-color); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,15 +14,23 @@
 }
 
 .website-icons-container-sign_up {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) rotateZ(180deg) rotateX(180deg);
 }
 
-.website-icons-container .div-wrapper {
-    transform: rotateY(180deg);
+.website-icons-container-login {
+    transform: rotateZ(180deg) rotateX(180deg);
 }
+
+.website-icons-container-login .div-wrapper {
+    transform: rotateZ(360deg) ;
+}
+
+/* .website-icons-container .div-wrapper {
+    transform: rotateY(-180deg);
+} */
 .website-icons-container-sign_up .div-wrapper {
-    transform: rotateY(0deg);
-}
+    transform: rotateY(180deg);
+} 
 
 /* .website-icons-container:hover, .website-icons-wrapper:hover{
     transform: rotateY(-180deg)
@@ -61,7 +69,7 @@
     font-weight: bold;
     font-size: 7.5rem;
     line-height: 7.5rem;
-    color: #78AED3;
+    color: var(--background-color);
     z-index: 10;
 }
 
@@ -132,7 +140,7 @@
 
 @media screen and (max-width: 1060px ) {
     .website-icons-container {
-        transform: rotateZ(270deg) rotateY(180deg) rotateZ(180deg);
+        transform: rotateZ(90deg) rotateY(180deg) rotateX(180deg) rotateZ(180deg);
         border-radius: 0%;
         /* height: 100%; */
         width: 60vh;
@@ -144,12 +152,23 @@
         right: 50px;
     }
 
+    /* .website-icons-container-login {
+        transform: rotateZ(270deg) rotateX(180deg);
+    }
+
+    .website-icons-container-sign_up {
+        translate: rotateZ(270deg) rotateX(90deg);
+    } */
+
     .website-icons-container-sign_up .div-wrapper {
-        transform: rotateZ(270deg);
+        transform: rotateZ(270deg) rotateX(180deg);
+        left: 50px;
     }
 
     .website-icons-container-login .div-wrapper {
-        transform: rotateZ(90deg) rotateY(0deg) rotateZ(180deg);
+        transform: rotateZ(90deg) rotateY(0deg) rotateZ(180deg) rotateX(180deg);
+        left: 50px;
+
     }
 
 }

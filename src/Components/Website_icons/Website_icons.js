@@ -9,7 +9,7 @@ export default function Website_icons( {signUpPage} ) {
 
             <div className='website-icons-wrapper'>
                 <div className="div-wrapper">
-                    <div className="website-icons-div">
+                    <div className="website-icons-div website-icons-div-1">
                         <li className="website-icons-text website-icons-text-1">و</li>
                     </div>
                     <div className="website-icons-div">

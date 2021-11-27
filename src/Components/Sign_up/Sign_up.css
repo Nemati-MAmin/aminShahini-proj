@@ -2,7 +2,12 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    right: -.625rem; 
+    right: -3rem; 
+}
+
+.sign_up-form-container {
+    position: relative;
+    left: -2rem;
 }
 
 .sign_up-container > *:last-child {
@@ -18,13 +23,15 @@
 }
 
 .sign_up-form-group .icon-wrapper {
-    right: 28.75rem;
     position: absolute;
+    right: 28.75rem;
     top: .625rem;
 }
 
 .sign_up-form-group .icon-circle {
     font-size: 1.25rem;
+    left: 0px;
+    top: 0px;
 }
 
 .sign_up-form-group .icon-exclamation {
@@ -44,18 +51,37 @@
     display: flex;
     justify-content: start;
 }
-
+/* 
 .sign_up-form-container > *:last-child > *:last-child {
+    position: relative;
+    right: 6.6875rem;
+} */
+
+.sign_up-button.button {
     position: relative;
     right: 6.6875rem;
 }
 
-.sign_up-form-group input::placeholder {
+.sign_up-form-group input::placeholder{
     font-size: 1.25rem;
     text-align: right;
     text-indent: 1rem;
     color: var(--place_holder-color);
 }
+
+.sign_up-button.sign_up-button-entry:hover {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.passwordEmpty,
+.phoneNumEmpty,
+.emailEmpty,
+.usernameEmpty {
+    display: none;
+}
+
 
 .sign_up-link-container {
     position: relative;
@@ -98,7 +124,8 @@
 .sign_up-link-container .icon-circle {
     font-size: 1.25rem;
     position: absolute;
-    left: 4.25rem;
+    left: 70px;
+    top:  0px;
 }
 
 
@@ -118,7 +145,7 @@
     display: flex;
     left: 7.5rem;
     margin-bottom: 0.625rem;
-    border: 0.125rem solid #156195;
+    border: 0.125rem solid var(--border-color);
     width: 10rem;
     height: 2.5rem;
     border-radius: 6.25rem;
@@ -181,6 +208,8 @@
     width: 37%;
 }
 
+
+
 @media screen and (max-width: 1060px ) {
     .sign_up-container {
         left: 50px;
@@ -208,6 +237,19 @@
     .pass_group > * {
         width: 112.5px;
     }
+
+    .sign_up-form-group .icon-wrapper {
+        width: 50%;
+        height: 50%;
+        right: 220px;
+    }
+
+    .sign_up-link-container .icon-circle {
+        font-size: 1.25rem;
+        position: absolute;
+        left: 51px;
+        top:  0px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -225,8 +267,22 @@
         margin-right: 0px;
     }
 
-    .icon-wrapper {
+   .sign_up-link-wrapper .icon-wrapper {
         margin-right: -55px;
+
+    }
+
+    .sign_up-form-group .icon-wrapper {
+        width: 50%;
+        height: 50%;
+        right: 200px;
+    }
+
+    .sign_up-link-container .icon-circle {
+        font-size: 1.25rem;
+        position: absolute;
+        left: 43px;
+        top:  0px;
     }
 
 }

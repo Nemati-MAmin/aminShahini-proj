@@ -1,10 +1,10 @@
 :root {
-    --background-color: #78AED3;
-    --button-color: #156195;
+    --background-color: #324E7B;
+    --button-color: #324E7B;
     --alert-color: #FF0000;
-    --border-color: #156195;
-    --text-color: #156195;
-    --place_holder-color: rgba(120, 174, 211, 0.64);
+    --border-color: #324E7B;
+    --text-color: #324E7B;
+    --place_holder-color: rgba(50, 78, 123, 0.32);
 }
 
 * {
@@ -13,6 +13,7 @@
 
 .form-group-input {
     border: 0.125rem solid var(--border-color);
+    outline: none;
     width: 18.75rem;
     height: 2.813rem;
     border-radius: 6.25rem;
@@ -22,7 +23,7 @@
     width: 9.688rem;
     border: 0.125rem solid var(--border-color);
     border-radius: 6.25rem;
-    background: #156195; 
+    background: var(--background-color); 
     font-family: B Traffic;
     font-style: normal;
     font-weight: normal;
@@ -48,7 +49,7 @@
     font-weight: normal;
     font-size: 1.375rem;
     line-height: 1.375rem;
-    color: #156195; 
+    color: var(--background-color); 
 }
 
 .form-icon {

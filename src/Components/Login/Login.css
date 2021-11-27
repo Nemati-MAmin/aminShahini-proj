@@ -1,8 +1,12 @@
 .login-container {
     position: relative;
-    display: flex;
-    flex-direction: column;
     margin-left: 3.75rem;
+    bottom: 4.375rem;
+}
+
+.login-button-container {
+    position: absolute;
+    bottom: 3.125rem;
 }
 
 .login-container > *:last-child {
@@ -23,6 +27,12 @@
     bottom: 1.7rem;
 }
 
+.login-button.login-button-register:hover {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 .login-form-group {
     display: flex;
     margin: .625rem;
@@ -38,14 +48,80 @@
 
 .login-form-group input::-moz-placeholder {
     font-size: 1.25rem;
-    color: rgba(120, 174, 211, 0.64);
+    color: rgba(50, 78, 123, 0.32);
 }
 
-.login-link-container {
-    position: relative;;
+.login-container .login-link-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.login-container .login-link-container .login-link.question-link {
+    position: absolute;
+    width: 18.75rem;
+    bottom: 22.5rem;
+    left: -7.188rem;
+    text-decoration: none;
+}
+
+.login-container .inner-login-container {
+    position: absolute;
+    width: 18.75rem;
+    bottom: 18.75rem;
+    right: 11.25rem;
+    margin-top: 0.313rem;
+
+}
+
+.login-container .inner-login-container .icon-wrapper {
+    position: absolute;
+    left: 11.875rem;
+    
+}
+
+.icon-circle {
+    position: absolute;
+    bottom: 0px;
+    right: 0px; 
+}
+
+.inner-login-container > * {
+    margin-bottom: 0.313rem;
+}
+
+.login-link-container .login-link-wrapper .up {
+    bottom: 1.875rem;
+}
+
+.login-link-container .login-link-wrapper .down {
+    bottom: 0px;
+}
+
+.alert-link{
+    text-decoration: none;
+}
+
+/* .login-container .login-link-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+} */
+
+
+/* .login-link-container {
+    position: absolute;;
     display: flex;
     flex-direction: column;
     left: 12.5rem;
+    bottom: 400px;
+    background-color: red;
 }
 
 .login-link-container > *, .login-link-wrapper > *{
@@ -57,12 +133,14 @@
     position: relative;
 }
 
-.login-link-container > .login-link-wrapper > li{
+.login-link-container > .login-link-wrapper > li { 
     list-style: none;
 }
 
 .login-link-container .login-link-wrapper{
     display: flex;
+    position: relative;
+    bottom: 20rem;
 }
 
 .login-link-wrapper .icon-wrapper {
@@ -72,14 +150,14 @@
 .login-link-wrapper .icon-circle {
     position: absolute;
     font-size: 1.4rem;
-    bottom: 0px;
+    bottom:  38px;
     right: 0px;
 }
 
 .login-link-wrapper {
     position: relative;
     right: 20px;
-}
+} */
 
 /* .login-link-container > *:first-child{
     font-family: B Traffic;
@@ -103,10 +181,18 @@
     display: flex;
     left: 7.5rem;
     margin-bottom: .625rem;
-    border: .125 solid #156195;
+    border: .125rem solid var(--border-color);
     width: 10rem;
     height: 2.5rem;
     border-radius: 6.25rem;
+}
+
+.passwordEmpty {
+    display: none;
+}
+
+.emailEmpty {
+    display: none;
 }
 
 .login-button-container .login-button{
@@ -142,7 +228,7 @@
     height: 2.5rem;
     border-radius: 6.25rem;
 
-    background-color: #156195;
+    background-color: var(--background-color);
     left: -.063rem;
     bottom: -.063rem;
 }
@@ -155,15 +241,96 @@
     line-height: 1.125rem;
 }
 
+
+
+/* .login-link.question-link {
+    position: relative;
+    left: 100px;
+    bottom: 100px;
+    margin: auto;
+    padding: auto;
+} */
+
+.entry-button.button {
+    position: absolute;
+    top: 24.375rem;
+    left: 18.75rem;
+}
+
+/* .login-link-container {
+    position: relative;
+
+} */
+
 @media screen and (max-width: 1060px ) {
-    .login-container{
+    /* .login-container .login-link-container .login-link.question-link {
+        position: relative;
+        width: 18.75rem;
+        bottom: 1rem;
+        left: 50rem;
+        text-decoration: none;
+    } */
+     .login-container{
+        margin-top: 200px;
         right: 30px;
+        height: 30%;
+        width: 50%;
+        margin-bottom: 90px;
     }
 
-    .login-container > *:last-child {
+    .login-link-container {
+        background-color: black;
         position: relative;
-        top: -1rem;
-        /* right: 20rem; */
-        left: -10rem;
+        z-index: 100;
+        bottom: 200px;
+        width: 100%;
+        height: 100%;
     }
+
+    
+
+    .login-link-container > * {
+        width: 100%;
+        height: 100%;
+    } 
+    
+    .login-link-container > .inner-login-container {
+        width: 100%;
+        height: 100%;
+        bottom: 240px;
+        left: -85px;
+    } 
+
+    .entry-button.button {
+        top: 200px;
+        left: -80px;
+    }
+
+    .login-form-group .icon-circle {
+        top: 0px;
+    }
+
+    .icon-wrapper {
+        width: 100%;
+        height: 100%;
+    } 
+    
+    .icon-wrapper > * {
+        width: 100%;
+        height: 100%;
+    }
+
+    .icon-wrapper.down {
+        top: 16px;
+    }
+
+    .icon-wrapper.up {
+        top: 0px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+      .inner-login-container {
+          top: -200px;
+      }
   }
